@@ -53,3 +53,58 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/api/peliculas/19
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "The social network",
+    "sinopsis": "La película se basa en múltiples fuentes y se traslada desde los pasillos de Harvard a los cubículos de Palo Alto.",
+    "anio": 2024,
+    "poster": "https://www.themoviedb.org/t/p/original/jXbqfVHmvCikyTw2Lf5OhKyt9Ym.jpg",
+    "categorias": [1, 2]
+}
+
+###
+
+GET http://localhost:3000/api/peliculas/17
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Inception",
+    "sinopsis": "Un ladrón que roba secretos corporativos mediante el uso de la tecnología de compartición de sueños es encargado con la tarea inversa de implantar una idea en la mente de un CEO.",
+    "anio": 2010,
+    "poster": "https://www.themoviedb.org/t/p/original/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
+    "categorias": ["Ciencia ficción", "Acción", "Aventura"]
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "The Godfather",
+    "sinopsis": "El patriarca de una dinastía criminal en Nueva York transfiere el control de su imperio clandestino a su reacio hijo menor.",
+    "anio": 1972,
+    "poster": "https://www.themoviedb.org/t/p/original/jzDnD5pvYgh9uXaI3IAG0HJlVLv.jpg",
+    "categorias": ["Drama", "Crimen"]
+}
+
+###
+
+PUT http://localhost:3000/api/peliculas/18
+Content-Type: application/json
+
+{
+    "titulo": "Inception",
+    "sinopsis": "Un ladrón que roba secretos corporativos mediante el uso de la tecnología de compartición de sueños es encargado con la tarea inversa de implantar una idea en la mente de un CEO.",
+    "anio": 2010,
+    "poster": "https://th.bing.com/th/id/OIP.ULu3ytbiO_JdNVHqx4mqiQHaLH?rs=1&pid=ImgDetMain"
+}
